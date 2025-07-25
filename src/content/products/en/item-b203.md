@@ -30,7 +30,7 @@ descriptionList:
   - title: "Improved Safety"
     subTitle: "A secure fitting translates to safer structures with reduced risk of component failure."
   - title: "Convenience"
-    subTitle: "This all-in-one set means you have the right size on hand, cutting down on project delays and additional trips to the hardware store."
+    subTitle: "This all-in-one set means you have the right size on hand, cutting down on project delays and additional trips to the Software store."
 specificationsLeft:
   - title: "Material Composition"
     subTitle: "Manufactured from high-grade steel, delivering strength and reliability for demanding applications."

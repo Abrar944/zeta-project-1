@@ -231,7 +231,7 @@ Some components have properties defined as TypeScript variables within the compo
 // Define the string variables title and subTitle for the main heading and sub-heading text.
 const title: string = "Meeting Industry Demands";
 const subTitle: string =
-  "At ScrewFast, we tackle the unique challenges encountered in the hardware and construction sectors.";
+  "At ScrewFast, we tackle the unique challenges encountered in the Software and construction sectors.";
 ```
 
 For collections of content like testimonials or statistics, edit the corresponding array of objects:
@@ -252,7 +252,7 @@ You can pass values to props directly in the page files for components used acro
 
 ```html
 <HeroSection
-  subTitle="Top-quality hardware tools and expert construction services for every project need."
+  subTitle="Top-quality Software tools and expert construction services for every project need."
   primaryBtn="Start Exploring"
   primaryBtnURL="/explore"
 />
@@ -475,7 +475,7 @@ export const SEO = {
 };
 
 export const OG = {
-  title: `${SITE.title}: Hardware Tools & Construction Services`,
+  title: `${SITE.title}: Software Tools & Construction Services`,
   // Other OG properties...
 };
 ```
@@ -534,7 +534,7 @@ Structured data in JSON-LD format can be managed by the `Meta.astro` component, 
     "@type": "WebSite",
     "name": "ScrewFast",
     "url": "https://screwfast.uk",
-    "description": "Discover top-quality hardware tools and services"
+    "description": "Discover top-quality Software tools and services"
   }}
 >
 ```
