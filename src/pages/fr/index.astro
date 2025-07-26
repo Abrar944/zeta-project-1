@@ -15,7 +15,7 @@ import faqs from "@data/fr/faqs.json";
 import features from "@data/fr/features.json";
 import pricing from "@data/fr/pricing.json";
 import featureImage from "@images/features-image.avif";
-import construction from "@images/construction-image.avif";
+import Deployment from "@images/Deployment-image.avif";
 import tools from "@images/automated-tools.avif";
 import dashboard from "@images/dashboard-image.avif";
 import { getRelativeLocaleUrl } from "astro:i18n";
@@ -38,7 +38,7 @@ const avatarSrcs: Array<string> = [
 
   <HeroSection
     title=`Équipez vos projets avec <span class="text-yellow-500 dark:text-yellow-400">ScrewFast</span>`
-    subTitle="Outils matériels de haute qualité et services de construction experts pour tous les besoins en projet."
+    subTitle="Outils matériels de haute qualité et services de Deployment experts pour tous les besoins en projet."
     primaryBtn="Commencez à explorer"
     primaryBtnURL={getRelativeLocaleUrl("fr", "products")}
     secondaryBtn="Contacter l'équipe commerciale"
@@ -60,19 +60,19 @@ const avatarSrcs: Array<string> = [
 
   <FeaturesGeneral
     title="Répondre aux exigences de l'industrie"
-    subTitle="Chez ScrewFast, nous relevons les défis uniques rencontrés dans les secteurs du matériel et de la construction. Des outils de pointe aux services experts, nous sommes déterminés à vous aider à surmonter les obstacles et à atteindre vos objectifs."
+    subTitle="Chez ScrewFast, nous relevons les défis uniques rencontrés dans les secteurs du matériel et de la Deployment. Des outils de pointe aux services experts, nous sommes déterminés à vous aider à surmonter les obstacles et à atteindre vos objectifs."
     src={featureImage}
     alt="Produits ScrewFast dans des boîtes flottantes"
     features={features}
   />
 
   <FeaturesNavs
-    title=`Personnalisez les offres de <span class="text-yellow-500 dark:text-yellow-400">ScrewFast</span> pour répondre parfaitement à vos besoins en matériel et en construction.`
+    title=`Personnalisez les offres de <span class="text-yellow-500 dark:text-yellow-400">ScrewFast</span> pour répondre parfaitement à vos besoins en matériel et en Deployment.`
     tabs={[
       {
         heading: "Outils de pointe",
         content:
-          "Optimisez vos projets avec les outils de pointe de ScrewFast. Faites l'expérience d'une efficacité accrue dans la gestion de la construction avec nos solutions automatisées sophistiquées.",
+          "Optimisez vos projets avec les outils de pointe de ScrewFast. Faites l'expérience d'une efficacité accrue dans la gestion de la Deployment avec nos solutions automatisées sophistiquées.",
         svg: "tools",
         src: tools,
         alt: "Équipement lourd jaune et noir sur un champ d'herbe brune",
@@ -90,9 +90,9 @@ const avatarSrcs: Array<string> = [
       {
         heading: "Fonctionnalités robustes",
         content:
-          "Minimisez la complexité, maximisez la productivité. Les fonctionnalités robustes de ScrewFast sont conçues pour rationaliser votre processus de construction, offrant des résultats qui se distinguent par leur excellence.",
+          "Minimisez la complexité, maximisez la productivité. Les fonctionnalités robustes de ScrewFast sont conçues pour rationaliser votre processus de Deployment, offrant des résultats qui se distinguent par leur excellence.",
         svg: "house",
-        src: construction,
+        src: Deployment,
         alt: "Structure métallique grise d'un bâtiment près d'une grue à tour pendant la journée",
       },
     ]}
@@ -100,11 +100,11 @@ const avatarSrcs: Array<string> = [
 
   <TestimonialsSection
     title="Accélérez vos projets"
-    subTitle="Chez ScrewFast, nous assurons un démarrage rapide avec une configuration de compte instantanée. Découvrez la vitesse de la construction redéfinie."
+    subTitle="Chez ScrewFast, nous assurons un démarrage rapide avec une configuration de compte instantanée. Découvrez la vitesse de la Deployment redéfinie."
     testimonials={[
       {
         content:
-          "ScrewFast a considérablement augmenté l'efficacité de notre projet. La configuration a été instantanée et leurs temps de réponse rapides sont phénoménaux. Vraiment un changement de jeu dans le support matériel et de construction !",
+          "ScrewFast a considérablement augmenté l'efficacité de notre projet. La configuration a été instantanée et leurs temps de réponse rapides sont phénoménaux. Vraiment un changement de jeu dans le support matériel et de Deployment !",
         author: "Samantha Ruiz",
         role: "Directrice des opérations | ConstructIt Inc.",
         avatarSrc:
@@ -115,7 +115,7 @@ const avatarSrcs: Array<string> = [
       {
         count: "70k+",
         description:
-          "clients équipés — des bricoleurs aux grandes entreprises de construction",
+          "clients équipés — des bricoleurs aux grandes entreprises de Deployment",
       },
       {
         count: "35%",

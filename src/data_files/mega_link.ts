@@ -23,7 +23,7 @@ export const servicesData = [
   {
     title: "Cutting-Edge Tools",
     description:
-      "Build Smarter, Faster. Experience next-level efficiency with ScrewFast's cutting-edge construction tools",
+      "Build Smarter, Faster. Experience next-level efficiency with ScrewFast's cutting-edge Deployment tools",
     icon: "hammer",
     url: "#",
   },

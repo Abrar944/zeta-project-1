@@ -21,7 +21,7 @@ tabs:
 longDescription:
   title: "Solutions de fixation robustes"
   subTitle: |
-    Les boulons hexagonaux SF-FN F303 sont conçus pour relever les défis de fixation les plus difficiles avec aisance. Que vous travailliez sur des projets de construction ou des machines lourdes, ces boulons hexagonaux offrent la force et la fiabilité nécessaires.
+    Les boulons hexagonaux SF-FN F303 sont conçus pour relever les défis de fixation les plus difficiles avec aisance. Que vous travailliez sur des projets de Deployment ou des machines lourdes, ces boulons hexagonaux offrent la force et la fiabilité nécessaires.
   btnTitle: "Contactez le service commercial pour en savoir plus"
   btnURL: "#"
 descriptionList:
@@ -30,7 +30,7 @@ descriptionList:
   - title: "Ingénierie de précision"
     subTitle: "Conçus avec des filets coupés avec précision et des spécifications exactes, garantissant un ajustement serré et sécurisé à chaque fois."
   - title: "Polyvalence"
-    subTitle: "Adaptés à une large gamme d'applications, de la construction aux machines, offrant des solutions de fixation polyvalentes."
+    subTitle: "Adaptés à une large gamme d'applications, de la Deployment aux machines, offrant des solutions de fixation polyvalentes."
 specificationsLeft:
   - title: "Matériau"
     subTitle: "Fabriqués en acier ou en alliage de qualité supérieure, offrant une résistance exceptionnelle et une résistance à la corrosion."
@@ -48,7 +48,7 @@ specificationsRight:
   - title: "Certifications"
     subTitle: "Conformes aux normes et certifications industrielles pertinentes, garantissant qualité et fiabilité."
   - title: "Applications"
-    subTitle: "Idéal pour une utilisation dans la construction, les machines, l'automobile et d'autres applications lourdes nécessitant une fixation solide et fiable."
+    subTitle: "Idéal pour une utilisation dans la Deployment, les machines, l'automobile et d'autres applications lourdes nécessitant une fixation solide et fiable."
 blueprints:
   first: "@/images/blueprint-1.avif"
   second: "@/images/blueprint-2.avif"    

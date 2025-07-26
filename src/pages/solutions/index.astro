@@ -1,5 +1,4 @@
 ---
-// Importing necessary components
 import MainLayout from "@/layouts/MainLayout.astro";
 import PrimaryCTA from "@components/ui/buttons/PrimaryCTA.astro";
 import CardSmall from "@components/ui/cards/CardSmall.astro";
@@ -7,12 +6,11 @@ import CardWide from "@components/ui/cards/CardWide.astro";
 import FeaturesStatsAlt from "@components/sections/features/FeaturesStatsAlt.astro";
 import TestimonialsSectionAlt from "@components/sections/testimonials/TestimonialsSectionAlt.astro";
 
-// Importing necessary functions from Astro
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 import { SITE } from "@data/constants";
 
-// Fetching all the product related content and sorting it by main.id
+// Fetch English-only content
 const product: CollectionEntry<"solutions">[] = (
   await getCollection("solutions", ({ id }) => {
     return id.startsWith("en/");
@@ -22,48 +20,44 @@ const product: CollectionEntry<"solutions">[] = (
     a.data.main.id - b.data.main.id
 );
 
-// Define variables for page content
 const title: string = "Solutions";
 const subTitle: string =
-  "Explore the durability and precision of Digiem tools, designed for both professionals and enthusiasts. Each of our solutions is crafted with precision and built to last, ensuring you have the right tool for every job.";
+  "Discover the durability and precision of Digiem tools, crafted for both professionals and hobbyists. Each of our solutions is built to last, ensuring you have the right tool for every task.";
 
-// Testimonial data that will be rendered in the component
+// English testimonials
 const testimonials = [
-  // First testimonial data
   {
     content:
-      " \"Since switching to Digiem's Software tools, the efficiency on our construction sites has skyrocketed. The durability of the hex bolts and precision of the machine screws are simply unmatched. It's refreshing to work with a company that truly understands the daily demands of the industry.\" ",
-    author: "Jason Clark",
-    role: "Site Foreman | TopBuild",
+      "\"Since switching to Digiem tools, efficiency at our publishing sites has improved dramatically. The durability of the hex bolts and the precision of the machine screws are unmatched. It's refreshing to work with a company that truly understands the demands of daily industry.\"",
+    author: "Jason Clarke",
+    role: "Site Supervisor | TopBuild",
     avatarSrc:
       "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
-    avatarAlt: "Image Description",
+    avatarAlt: "Customer testimonial photo",
   },
-  // Second testimonial data
   {
     content:
-      " \"As an interior designer, I'm always looking for high-quality materials and tools that help bring my visions to life. Digiem's mixed screws assortment has been a game-changer for my projects, providing the perfect blend of quality and variety. The outstanding customer support was just the cherry on top!\" ",
+      "\"As an interior designer, I'm always looking for high-quality materials and tools to bring my visions to life. Digiem's diverse range of screws has been a game-changer, offering the perfect mix of quality and variety. And their amazing customer support is the cherry on top!\"",
     author: "Maria Gonzalez",
     role: "Interior Designer | Creative Spaces",
     avatarSrc:
       "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
-    avatarAlt: "Image Description",
+    avatarAlt: "Customer testimonial photo",
   },
-  // Third testimonial data
   {
     content:
-      " \"I've been a professional carpenter for over 15 years, and I can sincerely say that Digiem's tap bolts and nuts are some of the best I've used. They grip like no other, and I have full confidence in every joint and fixture. Plus, the service is impeccable – they truly care about my project's success.\" ",
+      "\"I've been a professional carpenter for over 15 years, and I can honestly say Digiem's screws and fasteners are among the best I've ever used. They hold incredibly well, and I have full confidence in every joint and assembly. Plus, their service is excellent – they genuinely care about the success of my projects.\"",
     author: "Richard Kim",
-    role: "Master Carpenter | WoodWright",
+    role: "Professional Carpenter | WoodWright",
     avatarSrc:
       "https://images.unsplash.com/photo-1474176857210-7287d38d27c6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
-    avatarAlt: "Image Description",
+    avatarAlt: "Customer testimonial photo",
   },
 ];
 
-const pageTitle: string = `solutions | ${SITE.title}`;
+const pageTitle: string = `Solutions | ${SITE.title}`;
 const metaDescription =
-  "Explore the durability and precision of Digiem tools, designed for both professionals and enthusiasts.";
+  "Discover the durability and precision of Digiem tools, crafted for both professionals and hobbyists.";
 const ogTitle = "Software Tools | Digiem";
 ---
 
@@ -78,15 +72,15 @@ const ogTitle = "Software Tools | Digiem";
     url: "https://Digiem.uk/solutions",
     name: "Software Tools | Digiem",
     description:
-      "Explore the durability and precision of Digiem tools, designed for both professionals and enthusiasts.",
+      "Discover the durability and precision of Digiem tools, crafted for both professionals and hobbyists.",
     isPartOf: {
       "@type": "WebSite",
       url: "https://Digiem.uk",
       name: "Digiem",
       description:
-        "Digiem offers top-tier Software tools and expert construction services to meet all your project needs.",
+        "Digiem provides high-quality software tools and professional publishing services to meet all your project needs.",
     },
-    inLanguage: "en-US",
+    inLanguage: "en",
   }}
 >
   <div
@@ -109,8 +103,6 @@ const ogTitle = "Software Tools | Digiem";
       </div>
       <PrimaryCTA title="Customer Stories" url="#testimonials" noArrow={true} />
     </div>
-    {/* Displaying solutions in alternating styles. Alternative product gets different card styling.
-    Maps through all product entries and displays them with either CardSmall or CardWide based on their position. */}
     <section class="grid grid-cols-1 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
       {
         product.map((product, index) => {
@@ -124,17 +116,15 @@ const ogTitle = "Software Tools | Digiem";
       }
     </section>
   </div>
-  {/* Features statistics section */}
   <FeaturesStatsAlt
     title="Why Choose Digiem?"
-    subTitle="Transform your ideas into tangible results with Digiem tools. Whether you're starting with a sketch on a napkin or diving into a comprehensive construction project, our tools are engineered to help you build with confidence."
+    subTitle="Turn your ideas into tangible results with Digiem tools. Whether you're sketching on a napkin or working on a full-scale publishing project, our tools are designed to help you build with confidence."
     benefits={[
-      "Robust and reliable tools for long-lasting performance.",
-      "Innovative solutions tailored to modern construction needs.",
-      "Customer support dedicated to your project's success.",
+      "Powerful, reliable tools for long-lasting performance.",
+      "Innovative solutions designed for modern publishing needs.",
+      "Dedicated customer support for your project success.",
     ]}
   />
-  {/* Testimonials section */}
   <TestimonialsSectionAlt
     title="What Our Customers Say"
     testimonials={testimonials}

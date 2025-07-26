@@ -231,7 +231,7 @@ Some components have properties defined as TypeScript variables within the compo
 // Define the string variables title and subTitle for the main heading and sub-heading text.
 const title: string = "Meeting Industry Demands";
 const subTitle: string =
-  "At ScrewFast, we tackle the unique challenges encountered in the Software and construction sectors.";
+  "At ScrewFast, we tackle the unique challenges encountered in the Software and Deployment sectors.";
 ```
 
 For collections of content like testimonials or statistics, edit the corresponding array of objects:
@@ -252,7 +252,7 @@ You can pass values to props directly in the page files for components used acro
 
 ```html
 <HeroSection
-  subTitle="Top-quality Software tools and expert construction services for every project need."
+  subTitle="Top-quality Software tools and expert Deployment services for every project need."
   primaryBtn="Start Exploring"
   primaryBtnURL="/explore"
 />
@@ -297,7 +297,7 @@ export const footerLinks: FooterLinkSection[] = [
     section: "Product",
     links: [
       { name: "Tools & Equipment", url: "/tools-equipment" },
-      { name: "Construction Services", url: "/construction-services" },
+      { name: "Deployment Services", url: "/Deployment-services" },
       { name: "Pricing", url: "/pricing" },
     ],
   },
@@ -475,7 +475,7 @@ export const SEO = {
 };
 
 export const OG = {
-  title: `${SITE.title}: Software Tools & Construction Services`,
+  title: `${SITE.title}: Software Tools & Deployment Services`,
   // Other OG properties...
 };
 ```

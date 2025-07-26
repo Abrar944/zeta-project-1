@@ -10,11 +10,11 @@ import FeaturesStats from "@components/sections/features/FeaturesStats.astro";
 import blueprints from "@images/blueprints-image.avif";
 import personWorking from "@images/person-working.avif";
 import beforeAfter from "@images/before-after.avif";
-import constructionWorkers from "@images/construction-workers.avif";
+import DeploymentWorkers from "@images/Deployment-workers.avif";
 import aerialView from "@images/aerial-view.avif";
 import usingTools from "@images/using-tools.avif";
 import progressBuilding from "@images/progress-building.avif";
-import underConstruction from "@images/under-construction.avif";
+import underDeployment from "@images/under-Deployment.avif";
 import { SITE } from "@data/constants";
 
 interface Article {
@@ -38,10 +38,10 @@ const articles: Article[] = [
     isRightSection: true,
     title: "Delivering Expert Guidance",
     subTitle:
-      "Embarking on a construction project can be overwhelming. With our professional consultation services, we guide you through every stage, ensuring you make informed decisions. Whether you are a DIY enthusiast or a skilled contractor, our experts are on hand to offer tailored advice on product selection, project scope, and compliance with local regulations.",
+      "Embarking on a Deployment project can be overwhelming. With our professional consultation services, we guide you through every stage, ensuring you make informed decisions. Whether you are a DIY enthusiast or a skilled contractor, our experts are on hand to offer tailored advice on product selection, project scope, and compliance with local regulations.",
     single: false,
     imgOne: blueprints,
-    imgOneAlt: "Blueprints and digital tablet with construction plans.",
+    imgOneAlt: "Blueprints and digital tablet with Deployment plans.",
     imgTwo: personWorking,
     imgTwoAlt: "Person working in the office",
   },
@@ -49,29 +49,27 @@ const articles: Article[] = [
     isRightSection: false,
     title: "Transforming Designs into Reality",
     subTitle:
-      "Our skilled craftsmen bring precision and excellence to every construction project. From minor installations to substantial structural work, ScrewFast offers reliable construction services to turn your plans into tangible outcomes. We ensure the highest standards of safety and workmanship, utilizing top-quality tools and materials from our extensive inventory.",
+      "Our skilled craftsmen bring precision and excellence to every Deployment project. From minor installations to substantial structural work, Digiem offers reliable Deployment services to turn your plans into tangible outcomes. We ensure the highest standards of safety and workmanship, utilizing top-quality tools and materials from our extensive inventory.",
     img: beforeAfter,
-    imgAlt: "Construction site before and after",
-    btnExists: true,
-    btnTitle: "Learn More",
-    btnURL: "#",
+    imgAlt: "Deployment site before and after",
+    
   },
   {
     isRightSection: true,
     title: "Navigating Projects with Professional Oversight",
     subTitle:
-      "Effective project management is at the heart of any successful build. ScrewFast provides thorough planning and robust management services that keep your project on time and within budget. Let us handle the complexities of workflow coordination, resource allocation, and stakeholder communication while you focus on your vision.",
+      "Effective project management is at the heart of any successful build. Digiem provides thorough planning and robust management services that keep your project on time and within budget. Let us handle the complexities of workflow coordination, resource allocation, and stakeholder communication while you focus on your vision.",
     single: false,
-    imgOne: constructionWorkers,
-    imgOneAlt: "Construction workers orchestrating a project",
+    imgOne: DeploymentWorkers,
+    imgOneAlt: "Deployment workers orchestrating a project",
     imgTwo: aerialView,
-    imgTwoAlt: "Aerial view of managed construction",
+    imgTwoAlt: "Aerial view of managed Deployment",
   },
   {
     isRightSection: false,
     title: "Ensuring Long-lasting Performance",
     subTitle:
-      "Our commitment to your project doesn't end at completion. ScrewFast offers ongoing maintenance and support services to ensure your construction's longevity and performance. From regular check-ups to emergency assistance, our responsive team is there to provide seamless support.",
+      "Our commitment to your project doesn't end at completion. Digiem offers ongoing maintenance and support services to ensure your Deployment's longevity and performance. From regular check-ups to emergency assistance, our responsive team is there to provide seamless support.",
     img: usingTools,
     imgAlt:
       "Man in orange and black vest wearing white helmet holding yellow and black power tool",
@@ -80,22 +78,20 @@ const articles: Article[] = [
     isRightSection: true,
     title: "Crafting Bespoke Strategies for Unique Challenges",
     subTitle:
-      "For our larger enterprise clients, ScrewFast offers custom solutions designed to meet specific industry challenges. By understanding your unique needs, we engineer tailored strategies aimed at optimizing your operations, enhancing efficiency, and driving your business forward.",
+      "For our larger enterprise clients, Digiem offers custom solutions designed to meet specific industry challenges. By understanding your unique needs, we engineer tailored strategies aimed at optimizing your operations, enhancing efficiency, and driving your business forward.",
     single: false,
     imgOne: progressBuilding,
     imgOneAlt: "In progress building structure",
-    imgTwo: underConstruction,
-    imgTwoAlt: "Brown and gray building under construction",
-    btnExists: true,
-    btnTitle: "Read more",
-    btnURL: "#",
+    imgTwo: underDeployment,
+    imgTwoAlt: "Brown and gray building under Deployment",
+   
   },
 ];
 
 const pageTitle: string = `Services | ${SITE.title}`;
 const metaDescription =
-  "Uniting expertise with your vision, ScrewFast provides exceptional service and comprehensive solutions in the Software and construction industry, from consultation to project completion.";
-const ogTitle = "Expert Consultation Services | ScrewFast";
+  "Uniting expertise with your vision, Digiem provides exceptional service and comprehensive solutions in the Software and Deployment industry, from consultation to project completion.";
+const ogTitle = "Expert Consultation Services | Digiem";
 ---
 
 <MainLayout
@@ -105,29 +101,23 @@ const ogTitle = "Expert Consultation Services | ScrewFast";
   structuredData={{
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": "https://screwfast.uk/services",
-    url: "https://screwfast.uk/services",
-    name: "Expert Consultation Services | ScrewFast",
+    "@id": "https://Digiem.uk/services",
+    url: "https://Digiem.uk/services",
+    name: "Expert Consultation Services | Digiem",
     description:
-      "Uniting expertise with your vision, ScrewFast provides exceptional service and comprehensive solutions in the Software and construction industry, from consultation to project completion.",
+      "Uniting expertise with your vision, Digiem provides exceptional service and comprehensive solutions in the Software and Deployment industry, from consultation to project completion.",
     isPartOf: {
       "@type": "WebSite",
-      url: "https://screwfast.uk",
-      name: "ScrewFast",
+      url: "https://Digiem.uk",
+      name: "Digiem",
       description:
-        "ScrewFast offers top-tier Software tools and expert construction services to meet all your project needs.",
+        "Digiem offers top-tier Software tools and expert Deployment services to meet all your project needs.",
     },
     inLanguage: "en-US",
   }}
 >
   {/* MainSection is the introductory section of the page, it also contains a CTA button */}
-  <MainSection
-    title="Uniting Expertise with Your Vision"
-    subTitle="At ScrewFast, we take pride in providing comprehensive solutions and exceptional service in the Software and construction industry. Our experienced team is dedicated to supporting your project from inception to completion with a range of specialized services."
-    btnExists={true}
-    btnTitle="Schedule a Consultation"
-    btnURL="#"
-  />
+  
   {/* RightSection and LeftSection contain details about various services along with pertinent imagery.
   They alternate for variety in design.
   The 'btnExists' property is used to toggle the display of a button in these sections.
@@ -167,9 +157,9 @@ const ogTitle = "Expert Consultation Services | ScrewFast";
   {/* FeaturesStats section showcases essential stats valuable to users */}
   <FeaturesStats
     title="By the Numbers"
-    subTitle="Our commitment to quality and reliability is evident in every project we undertake. At ScrewFast, we are dedicated to delivering industry-leading services that ensure your construction projects are built to last."
+    subTitle="Our commitment to quality and reliability is evident in every project we undertake. At Digiem, we are dedicated to delivering industry-leading services that ensure your Deployment projects are built to last."
     mainStatTitle="96%"
-    mainStatSubTitle="of our clients rate their experience with ScrewFast as exceptional"
+    mainStatSubTitle="of our clients rate their experience with Digiem as exceptional"
     stats={[
       {
         stat: "99.8%",

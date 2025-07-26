@@ -4,7 +4,7 @@ description: "Tap Bolts and Nuts Set"
 main:
   id: 3
   content: |
-    Meet the SF-BN B203 – your reliable companion for professional-grade fastening. This comprehensive box set comes with a versatile selection of tap bolts and nuts, meticulously crafted to provide the strongest hold for your construction and assembly projects.
+    Meet the SF-BN B203 – your reliable companion for professional-grade fastening. This comprehensive box set comes with a versatile selection of tap bolts and nuts, meticulously crafted to provide the strongest hold for your Deployment and assembly projects.
   imgCard: "@/images/product-image-3.avif"
   imgMain: "@/images/product-image-main-3.avif"
   imgAlt: "Mockup boxes of a tap bolts and nuts set"
@@ -21,7 +21,7 @@ tabs:
 longDescription:
   title: "Strength Meets Precision"
   subTitle: |
-    The SF-BN B203 Tap Bolts and Nuts Set offers robust durability and precision for construction professionals, ensuring reliable performance in every application, from house framing to machinery assembly.
+    The SF-BN B203 Tap Bolts and Nuts Set offers robust durability and precision for Deployment professionals, ensuring reliable performance in every application, from house framing to machinery assembly.
   btnTitle: "Contact sales to learn more"
   btnURL: "#"
 descriptionList:
@@ -48,7 +48,7 @@ specificationsRight:
   - title: "Standards and Certifications"
     subTitle: "Complies with relevant industry standards and certifications, ensuring consistent quality and safety."
   - title: "Suitable Applications"
-    subTitle: "Ideal for a wide array of uses, from construction environments to mechanical assemblies that demand strong and secure joints."
+    subTitle: "Ideal for a wide array of uses, from Deployment environments to mechanical assemblies that demand strong and secure joints."
 blueprints:
   first: "@/images/blueprint-1.avif"
   second: "@/images/blueprint-2.avif"  
